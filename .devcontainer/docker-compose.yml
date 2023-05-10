@@ -15,5 +15,5 @@ services:
       - POSTGRES_DB=mydb
     network_mode: service:app
     volumes:
-      - "db-data:/var/lib/postgresql/data"
+      - "./db-data:/var/lib/postgresql/data"
       - "/tmp/postgres/socket:/var/run/postgresql"
